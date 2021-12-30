@@ -1,5 +1,9 @@
 # Feature-For-Website
-
+<br>
+REPOSITORY ini dibuat untuk memudahkan saya saat membuat 
+Project saya tidak perlu membuat lagi tinggal gunakan
+Saja code yang saya simpan disini
+<br>
 Masih akan terus di kembangkan kalian bisa berkontribusi untuk mebuat fitur untuk website
 
 This By me Doniws 
