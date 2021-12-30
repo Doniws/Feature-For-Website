@@ -16,3 +16,7 @@ Feature
 # 1.Menu Circle ,it so Cool for u Website
 
  ![ Alt text](https://github.com/Doniws/Feature-For-Website/blob/main/Demo/menu-circle.gif)
+<br>
+# 2.navbar flex ,was process for responsive 
+
+ ![ Alt text](https://github.com/Doniws/Feature-For-Website/blob/main/Demo/navbar-flex.gif)
