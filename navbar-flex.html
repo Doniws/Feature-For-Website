@@ -5,24 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>navbar-menu</title>
+    <link rel="stylesheet" href="https://doniws.github.io/FontAwesome6Pro/pro/css/all.css" >
     <link rel="stylesheet" href="navbar-flex.css">
 </head>
 <body>
-    <header class="navbar" id="namenu">
-        <img class="logo" src="images/logoutama.webp" alt="thelogo">
-        <nav>
-            <ul class="nav-link">
-                <li data-aos="fade-down" data-aos-offset="200" data-aos-duration="1000"><a href="astronaut.html">Astronaut</a></li>
-                <li data-aos="fade-down" data-aos-offset="200" data-aos-duration="2000"><a href="rocket.html">Rocket</a></li>
-                <li data-aos="fade-down" data-aos-offset="200" data-aos-duration="3000"><a href="landing.html">Landing</a></li>
-            </ul>
-        </nav>
-        <button class="btn-nav">
-            Login
-        </button>
-        <!-- <span class="menu-icon">
-            <i class="fa-regular fa-bars-sort fa-flip-horizontal" onclick="togglemenu()"></i>
-        </span> -->
-    </header>
+    <div class="navbar">
+        <!-- change this logo  -->
+            <img src="images/logoutama.webp" class="logo" >
+    
+    <nav>
+        <ul id="menuList">
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Article</a></li>
+            <li><a href="#">Contact</a></li>
+          
+        </ul>
+    </nav>
+    <!--  -->
+    <div class="menu-toggle menu-icon" onclick="togglemenu()">
+        <input type="checkbox"/>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+    <button class="btn-nav">Login</button>
+    </div>
+    
+            <!-- Disini untuk java scripnya -->
+            <script>
+                // Untuk dark mode
+                function myFunction(){
+                    var element = document.body
+
+                    element.classList.toggle("dark-mode");
+                }
+                // untuk menu disini
+                var menuList= document.getElementById("menuList");
+            menuList.style.maxHeight="0px";
+            function togglemenu(){
+
+                if( menuList.style.maxHeight=="0px")
+                {
+                    menuList.style.maxHeight="130px";
+                }else{
+                    menuList.style.maxHeight="0px";
+                }
+            }
+
+           
+            </script>
 </body>
 </html>
