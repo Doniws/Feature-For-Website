@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu circle</title>
+    <link rel="stylesheet" href="https://doniws.github.io/FontAwesome6Pro/pro/css/all.css" >
+    <link rel="stylesheet" href="menu-circle-fixed.css">
+</head>
+<body>
+    <div class="menu">
+        <div class="toggle">
+            <!-- on this you can add logo like font or image  -->
+            <i class="fa-duotone fa-comments" style="--fa-primary-color: rgb(40, 141, 40); --fa-secondary-color: rgb(0, 81, 255);"></i>
+        </div>
+        <!-- change icon what do you like  -->
+        <!-- you can find on font awesome 6 -->
+        <li style="--i:0;">
+            <a href=""><i class="fa-brands fa-facebook" style="color: rgb(0, 76, 255);"></i></a>
+        </li>
+        <li style="--i:1;">
+            <a href=""><i class="fa-brands fa-linkedin" style="color: rgb(0, 68, 255);"></i></a>
+        </li>
+        <li style="--i:2;">
+            <a href=""><i class="fa-brands fa-youtube" style="color:red ;"></i></a>
+        </li>
+        <!-- you can add menu again 0-7 -->
+        <li style="--i:3;">
+            <a href=""><i class="fa-brands fa-instagram" style="color: rgb(198, 130, 238);"></i></a>
+        </li>
+        <li style="--i:4;">
+            <a href=""><i class="fa-brands fa-twitter" style="color: rgb(0, 102, 255);"></i></a>
+        </li>
+        <li style="--i:5;">
+            <a href=""><i class="fa-brands fa-discord" style="color:rgb(53, 42, 112) ;"></i></a>
+        </li>
+        <li style="--i:6;">
+            <a href=""><i class="fa-brands fa-reddit" style="color: rgb(255, 94, 0);"></i></a>
+        </li>
+        <li style="--i:7;">
+            <a href=""><i class="fa-brands fa-whatsapp" style="color: rgb(30, 200, 30);"></i></a>
+        </li>
+
+    </div>
+
+    <script>
+    let toggle = document.querySelector('.toggle');
+    let menu = document.querySelector('.menu');
+    toggle.onclick = function(){
+        menu.classList.toggle('active')
+    }
+
+    </script>
+</body>
+</html>
