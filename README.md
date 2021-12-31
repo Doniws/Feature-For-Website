@@ -33,3 +33,10 @@ Feature
 <br>
 
  ![ Alt text](https://github.com/Doniws/Feature-For-Website/blob/main/Demo/navbar-flex.gif)
+ <br>
+# 3.360deg image ,its so cool for product,like house,shirt,shoe
+   Demo<br>
+   https://doniws.github.io/Feature-For-Website/360.html
+  <br>
+  
+ ![ Alt text](https://github.com/Doniws/Feature-For-Website/blob/main/Demo/360deg-image.gif)
