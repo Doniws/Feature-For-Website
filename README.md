@@ -27,7 +27,7 @@ Feature
 
  ![ Alt text](https://github.com/Doniws/Feature-For-Website/blob/main/Demo/menu-circle.gif)
 <br>
-# 2.navbar flex ,was process for responsive
+# 2.navbar flex 
   Demo<br>
    https://doniws.github.io/Feature-For-Website/navbar-flex.html
 <br>
