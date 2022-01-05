@@ -1,0 +1,372 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 1em;
+
+  }
+  html{
+    overflow-x: hidden;
+  }
+  
+   body{
+     background-color: rgb(219, 218, 218);
+   }
+  
+  /* selct atau tekan */
+  ::selection{
+    background-color: #40a6fc;
+  color: #000000;
+  
+  }
+  /* width */
+  ::-webkit-scrollbar {
+  width: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+  background: #3ab7ff; 
+  
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+  background: #27303d; 
+  }
+
+  /* text di bwah judul  */
+  .text-inset {
+      color: steelblue;
+      font-size: 1em;
+      position:relative;
+      text-align: center;
+      top: 450px;
+      font-family: "Roboto";
+      font-weight: 800;
+      letter-spacing: -0.15px;
+      line-height: 22px;
+  }
+  .sidebar{
+    position:absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 78px;
+    background: #161c29;  /*ini untuk bacground sidebar */
+    padding: 6px 14px;
+    z-index: 99;
+    transition: all 0.5s ease;
+    box-shadow:2px 2px 12px rgba(0, 0, 0, 0.349);
+    overflow: scroll;
+    overflow-x:hidden ;
+  
+  
+  }
+  .sidebar.open{
+    width: 250px;
+    overflow-x:hidden ;
+  }
+  .sidebar .logo-details{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow-x:hidden ;
+  }
+  .sidebar .logo-details .icon{
+    opacity: 0;
+    transition: all 0.5s ease;
+    overflow-x:hidden ;
+  }
+  .sidebar .logo-details .logo_name{
+    color: #3b88fa ;   /*ini untuk mengatur logo gambar doni article */
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 0;
+    transition: all 0.5s ease;
+    padding-left: 20px;
+    overflow-x:hidden ;
+  }
+  .sidebar.open .logo-details .icon,
+  .sidebar.open .logo-details .logo_name{
+    opacity: 1;
+  }
+  .sidebar .logo-details #btn{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: all 0.4s ease;
+    font-size: 23px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    overflow-x:hidden ;
+  }
+  .sidebar.open .logo-details #btn{
+    text-align: right;
+    
+  }
+  
+  /* ini buat logo di sidebar */
+  .sidebar i{
+    color: #40a6fc ;
+    height: 60px;
+    min-width: 50px;
+    font-size: 28px;
+    text-align: center;
+    line-height: 60px;
+    
+  }
+  .sidebar i:hover{
+    color: #22409b;
+    transition:all 5s ease ;
+   
+  }
+  .sidebar .nav-list{
+    margin-top: 20px;
+    height: 100%;
+   
+  }
+  .sidebar li{
+    position:relative;
+    margin: 8px 0;
+    list-style: none;
+    
+  }
+  .sidebar li .tooltip{
+    position: absolute;
+    top: -20px;
+    left: calc(100% + 15px);
+    z-index: 3;
+    background: rgb(63, 69, 124);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0;
+    white-space: nowrap;
+    pointer-events: none;
+    transition: 0s;
+   
+  }
+  .sidebar li:hover .tooltip{
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.4s ease;
+    top: 50%;
+    transform: translateY(-50%);
+   
+  }
+  .sidebar.open li .tooltip{
+    display: none;
+    
+  }
+  .sidebar input{
+    font-size: 15px;
+    color:  #47528b;
+    font-weight: 400;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    width: 50px;
+    border: none;
+    border-radius: 12px;
+    transition: all 0.5s ease;
+    background: #1d1b3198;
+   
+  }
+  .sidebar.open input{
+    padding: 0 20px 0 60px;
+    width: 100%;
+  }
+  .sidebar .fa-magnifying-glass{
+    position: absolute;
+    
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 22px;
+    background: #40a6fc;
+    color: rgb(0, 0, 0);
+  }
+  .sidebar.open .fa-magnifying-glass:hover{
+    background: #5d5dca;
+    color: rgb(45, 43, 71);
+    
+  }
+  .sidebar .fa-magnifying-glass:hover{
+    background: #5d5dca;
+    color: #11101d;
+   
+  }
+  .sidebar li .a{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    background: #11101dbd;
+    animation: moveright 1s linear 1;
+    animation-delay: 1s;
+    overflow-x:hidden ;
+    animation-fill-mode:forwards;
+    
+  }
+  .sidebar li a{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    background: #11101dbd;
+  }
+  .sidebar li a:hover{
+    background: #47528b
+    ;
+  }
+  .sidebar li a .links_name{
+    color: #40a6fc
+    ;
+    font-size: 15px;
+    font-weight: 400;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s;
+  }
+  .sidebar.open li a .links_name{
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .sidebar li a:hover .links_name,
+  .sidebar li a:hover i{
+    transition: all 0.5s ease;
+    color: #11101dc9;
+  }
+  .sidebar li i{
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    border-radius: 12px;
+    
+  }
+  .sidebar li.profile{
+    position:fixed;
+    height: 60px;
+    width: 78px;
+    left: 0;
+    bottom: -8px;
+    padding: 10px 14px;
+    background: #1b1e3b;
+    transition: all 0.5s ease;
+    box-shadow:2px 2px 12px rgba(0, 0, 0, 0.89);
+    
+    
+  }
+  
+  /* profile */
+  .sidebar.open li.profile{
+    width: 250px;
+  }
+  .sidebar li .profile-details{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+  .sidebar li img{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 10px;
+  }
+  .sidebar li.profile .name,
+  .sidebar li.profile .job{
+    font-size: 15px;
+    font-weight: 400;
+    color: #40a6fc  ;
+    white-space: nowrap;
+  }
+  .sidebar li.profile .name:hover,
+  .sidebar li.profile .job:hover{
+    transition: all 2s ease;
+    color: #344c8b ;
+   
+  }
+  .sidebar li.profile .job{
+    font-size: 12px;
+  }
+  .sidebar .profile #log_out{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: #1f1d35;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 0px;
+    transition: all 0.5s ease;
+    box-shadow:2px 2px 12px rgba(0, 0, 0, 0.699);
+  
+  }
+  .sidebar.open .profile #log_out{
+    width: 50px;
+    background: none;
+  }
+  .home-section{
+    position: cover;
+    background-color: #2a3340;
+    height: 100vh;
+    z-index: 2;
+    background-position: center;
+   background-size: cover;
+    width: 100%;
+    
+    
+   
+  }
+  .flex-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* animasi disini */
+  /* animasi dsinikekiri */
+  @keyframes moveleft{
+    100%{
+        transform: translateY(0px);
+        visibility: hidden;
+    }
+    0%{
+        transform: translateX(100px);
+        visibility: visible;
+    }
+  }
+  @keyframes moveright {
+    100%{
+        transform: translateY(0px);
+        visibility: visible;
+    }
+    0%{
+        transform: translateX(-100px);
+        visibility: visible;
+    }
+  }

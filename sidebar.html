@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="https://doniws.github.io/FontAwesome6Pro/pro/css/all.css" >
+
+</head>
+<body>
+      <!-- sidebar -->
+      <div class="sidebar">
+        <div class="logo-details">
+          <img src="images/logoutama.webp" style="height: 52px; width: 52px;" class="icon">
+        <div class="logo_name">Doni Article</div>
+        <i class="fa-duotone fa-bars" id="btn" ></i>
+        </div>
+        <ul class="nav-list">
+          <li action="/action_page.php">
+            
+            <i type="submit" class="fa-duotone fa-magnifying-glass"></i>
+              <input type="search" placeholder="Search">
+              <span class="tooltip">Search</span>
+          </li>
+          <li>
+            <a href="index.html" class="a">
+              <i class="fa-duotone fa-grid-2"></i>
+              <span class="links_name">Home</span>
+            </a>
+              <span class="tooltip">Home</span>
+          </li>
+          <li>
+            <a id="fullscr" class="a">
+              <i class="fa-duotone fa-expand"></i>
+              <span class="links_name">Fullscreen</span>
+            </a>
+            <span class="tooltip">Fullscreen</span>
+          </li>
+          <li>
+            <a href="aboutme.html" class="a">
+            <i class="fa-duotone fa-user-bounty-hunter"></i>
+              <span class="links_name">About me</span>
+            </a>
+            <span class="tooltip">About me</span>
+          </li>
+          <li>
+            <a href="space.html" class="a">
+            <i class="fa-duotone fa-galaxy"></i>
+              <span class="links_name">Galaxy</span>
+            </a>
+            <span class="tooltip">Galaxy</span>
+          </li>
+          <li>
+            <a href="https://doniwschat.000webhostapp.com/login.php" class="a">
+            <i class="fa-duotone fa-comments-question-check"></i>
+              <span class="links_name">Messages</span>
+            </a>
+            <span class="tooltip">Messages</span>
+          </li>
+          <li>
+            <a href="quiz.html"  class="a">
+            <i class="fa-duotone fa-circle-question"></i>
+              <span class="links_name">Quiz</span>
+            </a>
+            <span class="tooltip">Quiz</span>
+          </li>
+          <li>
+            <a href="kakulator.html" class="a">
+            <i class="fa-duotone fa-calculator-simple"></i>
+              <span class="links_name">kakulator</span>
+            </a>
+            <span class="tooltip">kakulator</span>
+          </li>
+          <li>
+          <a href="#" class="a">
+            <i class="fa-duotone fa-folder-plus"></i>
+            <span class="links_name">Article Terbaru</span>
+          </a>
+          <span class="tooltip">Article Terbaru</span>
+        </li>
+          <li>
+            <a href="daftararticle.html" class="a">
+            <i class="fa-duotone fa-clipboard-list"></i>
+              <span class="links_name">Daftar Article</span>
+            </a>
+            <span class="tooltip">Daftar Article</span>
+          </li>
+          <li>
+          <a href="PagefirstC++.html" class="a">
+          <i class="fa-duotone fa-circle-c"></i>
+            <span class="links_name">Note C++</span>
+          </a>
+          <span class="tooltip">C++</span>
+        </li>
+        <li>
+        <a href="#" class="a">
+          <i class="fa-brands fa-python fa-fade"></i>
+          <span class="links_name">Note Python <i class="fa-solid fa-microchip"></i></span>
+        </a>
+        <span class="tooltip">Python</span>
+      </li>
+      <li>
+        <a href="#" class="a">
+          <i class="fa-brands fa-java fa-fade"></i>
+          <span class="links_name">Note Java <i class="fa-solid fa-microchip"></i></span>
+        </a>
+        <span class="tooltip">Java</span>
+      </li>
+          <li>
+            <a id="music" onclick="bestmusic()" class="a">
+            <i class="fa-duotone fa-headphones-simple"></i>
+              <span class="links_name">My Music</span>
+            </a>
+            <span class="tooltip">My Music</span>
+          </li>
+          <li title="Setting" >
+            <a href="javascript:alert('Membutuhkan Proses Panjang')" class="a">
+            <i class="fa-duotone fa-gear fa-fade" ></i>
+              <span class="links_name">Setting</span>
+            </a>
+            <span class="tooltip">Setting</span>
+          </li>
+          <br>
+        <br>
+        <br>
+        <li class="profile">
+              <div class="profile-details">
+              <i class="fa-duotone fa-user-visor"></i>
+              
+              <div class="name_job">
+                  <div class="name">Doni Article</div>
+                  <div class="job">Programmer</div>
+                </div>
+              </div>
+            <a> <i onclick="myFunction()" class="fa-duotone fa-right-to-bracket" id="log_out" ></i></a>
+          </li>
+        </ul>
+      </div>
+
+    <script>
+      let sidebar = document.querySelector(".sidebar");
+      let closeBtn = document.querySelector("#btn");
+      let searchBtn = document.querySelector(".fa-magnifying-glass");
+    
+      closeBtn.addEventListener("click", ()=>{
+        sidebar.classList.toggle("open");
+        menuBtnChange();//calling the function(optional)
+      });
+    
+      searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+        sidebar.classList.toggle("open");
+        menuBtnChange(); //calling the function(optional)
+      });
+    
+      // following are the code to change sidebar button(optional)
+      function menuBtnChange() {
+      if(sidebar.classList.contains("open")){
+      closeBtn.classList.replace("fa-bars", "fa-bars-sort");//replacing the iocns class
+      }else {
+        closeBtn.classList.replace("fa-bars-sort","fa-bars");//replacing the iocns class
+      }
+      }
+      </script>
+      <!-- click -->
+
+    <script>
+      function  myFunction() {
+      var log_out = confirm;
+        var bx  = 
+        document.getElementById("log_out");
+        if (confirm("id : Yakin Mau Keluar?!\nen : Sure Want To Get Out from my website?! ")) {
+        window.location = "404.html";
+        } 
+        else ("You press batal")
+        {
+          
+          }
+  
+        }
+        function  bestmusic() {
+        var music = confirm;
+        var bx  = 
+        document.getElementById("music");
+        if (confirm("ID : Yakin Ingin masuk ke musik ini akan membuat paket internet anda cepat terkuras. ")) {
+        window.location = "music.html";
+        } 
+        else ("You press batal")
+        {   
+        }
+  
+        }
+    </script>
+</body>
+</html>
