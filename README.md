@@ -27,9 +27,16 @@ Feature
 
  ![ Alt text](https://github.com/Doniws/Feature-For-Website/blob/main/Demo/menu-circle.gif)
 <br>
-# 2.navbar flex ,was process for responsive
+# 2.navbar flex 
   Demo<br>
    https://doniws.github.io/Feature-For-Website/navbar-flex.html
 <br>
 
  ![ Alt text](https://github.com/Doniws/Feature-For-Website/blob/main/Demo/navbar-flex.gif)
+ <br>
+# 3.360deg image ,its so cool for product,like house,shirt,shoe
+   Demo<br>
+   https://doniws.github.io/Feature-For-Website/360.html
+  <br>
+  
+ ![ Alt text](https://github.com/Doniws/Feature-For-Website/blob/main/Demo/360deg-image.gif)
