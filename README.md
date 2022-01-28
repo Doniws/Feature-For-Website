@@ -40,3 +40,12 @@ Feature
   <br>
   
  ![ Alt text](https://github.com/Doniws/Feature-For-Website/blob/main/Demo/360deg-image.gif)
+ 
+# 4.Sidebar Modern DASHBOARD
+   Demo<br>
+   https://doniws.github.io/Feature-For-Website/sidebar.html
+  <br>
+  
+ ![ Alt text](https://github.com/Doniws/Feature-For-Website/blob/main/Demo/sidebar.gif)
+  
+  
